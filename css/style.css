@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding:0px;
+	background-image:url(../images/red.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;}
+	ul{
+		list-style:none;
+		}
+		a{
+			text-decoration:none;}
+		.logo img{
+			height:50px;}
+			.navigation{
+				display:flex;
+				justify-content:space-between;
+				margin:40px;}
+				.menu ul{
+					display:flex;
+					position:absolute;
+					right:10%;}
+					.menu ul li{
+						margin:0px 60px;}
+						.menu ul li a{
+							font-family:calibri;
+							font-weight:700;
+							color:#c2c2c4;
+							letter-spacing:1px;
+							position:absolute;
+							display:flex;
+							justify-content:center;
+							align-items:center;
+							width:80px;
+							height:35px;
+							}
+							.hover:hover:before{
+								content:'';
+								position:absolute;
+								background-color:#3d3d3f;
+								width:80px;
+								height:35px;
+								animation:bgcolor ease 0.5s;}
+ 
+.active-menu:before{
+		content:'';
+								position:absolute;
+								background-color:#3d3d3f;
+								width:80px;
+								height:35px;}
+						.information-btn,.About-btn{
+							font-size:18px;
+							font-family:calibri;
+							margin:0px 10px;
+							font-weight:600;
+							letter-spacing:1px;
+							}
+							.information-btn a,.About-btn a{
+								color:#FFFFFF;}
+								
+		.slide-button{
+			display:flex;
+			transform:rotate(-90deg);
+			position:absolute;
+			left:-2%;
+			top:47%;
+			margin:0px;
+			padding:0px;}
+			.active-line{
+				width:auto;
+				height:30px;
+				border-bottom:3px solid #FFFFFF;}
+	.wrapper{
+		display:flex;
+		flex-direction:column;
+		align-items:center;}
+		.information-container,.about-container{
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+			width:80%;
+			position:absolute;
+			left:-100000px;}
+			.active-slide{
+				left:auto;
+				animation:fade ease 1s;}
+			.img-container{
+				flex-basis:650px;
+				height:550px;
+				display:flex;
+				justify-content:center;
+				}
+				.img-container img{
+					max-width:100%;
+					max-height:100%;}
+					.text-container{
+						width:400px;
+						}
+						.text-container h1,.text-container h2{
+							margin:0px;
+							padding:0px;
+							line-height:60px;
+							font-size:70px;
+							color:#ececec;
+							font-family:calibri;
+							font-weight:300;
+							text-shadow:2px 2px 20px rgba(0,0,0,0.3);
+							}
+		.text-container p{
+			color:#b5b5b9;
+			font-family:myriad pro;}
+			.text-container a{
+				color:#fff;
+				}
+			.first-num,.second-num{
+				font-size:10px;
+				color:#ebebeb;
+				font-family:bebas kai;
+				background-color:#262627;
+				width:50px;
+				height:50px;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				border-radius:50%;
+				}
+				.active-num{
+					width:80px;
+					height:80px;
+					font-size:20px;
+					border:2px solid #272727;
+					background-color:#de3737;}
+				.first-num a,.second-num a{
+					color:#FFFFFF;}
+					.contact-btn{
+						display:flex;
+						position:absolute;
+						left:50px;
+						bottom:20px;}
+						.info-1,.info-2{
+							background:#262627;
+							position:absolute;
+							bottom:20px;
+							right:-400000px;
+							position:fixed;}
+						.active-contact{
+							right:40px;
+							animation:fade ease 0.5s;}
+							th,tr,td{
+								color:#c2c2c4;
+								font-family:calibri;
+								padding:1px 10px;
+								font-size:15px;}
+								.social img{
+									margin:0px;
+									padding:0px;
+									}
+									.social{
+										position:absolute;
+										top:50%;
+										right:0;
+										transform:translateY(-50%);
+										position:fixed;}
+										.social ul li{
+											height:45px;
+											}
+											.social ul li a img{
+												max-width:100%;
+												max-height:100%;}
+												.social ul li a:hover img{
+													transform:scale(1.1);
+													transition:all ease 0.5s;}
+	@keyframes fade{
+		0%{
+			opacity:0;
+			}
+		100%{
+			opacity:1;
+			}}
+ 
+	@keyframes bgcolor{
+				0%{
+					width:0px;
+					}
+					100%{
+						width:80px;}
+				
+				}
+
+
+
+
+
+				
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
